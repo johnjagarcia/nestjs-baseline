@@ -1,0 +1,22 @@
+{
+  "type": "mssql",
+  "host": "she-db.database.windows.net",
+  "port": 1433,
+  "username": "she",
+  "password": "Bvcxzaq1",
+  "database": "SHE",
+  "entities": [
+    "src/entities/**/*.entity{.ts,.js}"
+  ],
+  "migrations": [
+    "src/migrations/**/*.{ts,js}"
+  ],
+  "cli": {
+    "entitiesDir": "src/entities",
+    "migrationsDir": "src/migrations"
+  },
+  "synchronize": false,
+  "options": {
+    "encrypt": true
+  }
+}
