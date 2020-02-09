@@ -41,10 +41,10 @@ export class ConfigService implements TypeOrmOptionsFactory {
       username: this.get('DB_USER'),
       password: this.get('DB_PASSWORD'),
       database: this.get('DB_NAME'),
-      entities: ['src/entities/**/*.entity{.ts,.js}'],
+      entities: ['dist/entities/**/*.entity{.ts,.js}'],
       migrations: ['src/migrations/**/*.{ts,js}'],
       cli: {
-        entitiesDir: 'src/entities',
+        entitiesDir: 'dist/entities',
         migrationsDir: 'src/migrations',
       },
       synchronize: false,

@@ -6,13 +6,13 @@
   "password": "Bvcxzaq1",
   "database": "SHE",
   "entities": [
-    "src/entities/**/*.entity{.ts,.js}"
+    "dist/entities/**/*.entity{.ts,.js}"
   ],
   "migrations": [
     "src/migrations/**/*.{ts,js}"
   ],
   "cli": {
-    "entitiesDir": "src/entities",
+    "entitiesDir": "dist/entities",
     "migrationsDir": "src/migrations"
   },
   "synchronize": false,
